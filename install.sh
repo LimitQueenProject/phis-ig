@@ -14,6 +14,7 @@ echo ""
 echo -e $'\e[1;33m[\e[0m\e[1;77m+\e[0m\e[1;33m]\e[0m\e[1;32m >> DOWNLOAD REQUIREMENTS >> \e[0m'
 termux-setup-storage
 sudo apt-get install apache2 -y
+apt install pv
 apt install apache2 -y
 apt install php -y
 apt install jq -y
