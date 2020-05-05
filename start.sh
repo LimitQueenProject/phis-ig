@@ -9,20 +9,6 @@ banner(){
 curl -s http://artscene.textfiles.com/vt100/monkey.vt | pv -q -L 10000
 echo -e "\e[1;33mSubscribe channel admin untuk mendapatkan akses"
 sleep 2.8
-xdg-open https://www.youtube.com/channel/UC1rlhLpR7f1ehlvx7IRgEvg
-echo "minta pass ke 089646647191"
-echo ""
-pass="limit sukses :v"
-until [ "$siapa" = "$pass" ]
-do
-	read -p "Masukan password tools ini : " siapa		
-					
-done
-
-echo "MEMERIKSA KEAMANAN>>>"
-sleep 2
-
-
 
 clear
 
