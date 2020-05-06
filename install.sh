@@ -1,33 +1,3 @@
-#!/bin/bash
-echo ""
-chmod 777 start.sh
-clear
-echo ""
-echo ""
-echo ""
-echo ""
-echo -e $'\e[1;32m[\e[0m\e[1;77m+\e[0m\e[1;32m]\e[0m\e[1;33m!!! NGROK TOKEN MUST OTHERWISE SCRIPT NOT WORKING PROPERLY (ngerti ga lu?)!!! \e[0m'
-sleep 4
-clear
-echo ""
-echo ""
-echo -e $'\e[1;33m[\e[0m\e[1;77m+\e[0m\e[1;33m]\e[0m\e[1;32m >> DOWNLOAD REQUIREMENTS >> \e[0m'
-termux-setup-storage
-sudo apt-get install apache2 -y
-apt install pv
-apt install apache2 -y
-apt install php -y
-apt install jq -y
-apt install tail -y
-apt install curl -y
-apt install zip -y
-pkg install wget -y
-clear
-wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-arm.zip
-unzip ngrok-stable-linux-arm.zip
-cp -R ngrok sites/follow/
-clear
-echo ""
-echo ""
-sleep 2
-clear
+z="
+";RBz='term';uz='OPER';Bz=' ""';eBz='php ';Qz='lama';lBz='wget';uBz='7iaH';oz='SE S';FCz='cp -';Lz='1;32';HCz='rok ';Jz=' -e ';rBz='.io/';gBz='tail';gz=';33m';vz='LY (';JBz='DOWN';xBz='stab';ICz='site';MCz='p 2';fz='2m]\';jz='K TO';HBz=';32m';bz='\e[1';fBz='jq -';hBz=' -y';Vz='ja y';pz='CRIP';nBz='ps:/';CBz='[0m'\''';iBz='curl';Uz='ar a';Oz='luma';az='e[0m';SBz='ux-s';Zz='2m[\';Mz='mpro';KCz='llow';Dz='d 77';ECz='p ng';NBz='MENT';MBz='UIRE';kz='KEN ';wBz='rok-';ez='0m\e';bBz='apac';lz='MUST';aBz='y';KBz='LOAD';GBz='3m]\';GCz='R ng';Rz=' sed';nz='ERWI';tz='G PR';kBz='pkg ';xz='ti g';mz=' OTH';ACz='inux';Kz='"\e[';ABz='?)!!';TBz='etup';OBz='S >>';QBz='0m'\''';XBz='inst';Iz='r';Gz='sh';EBz='p 4';CCz='.zip';vBz='b/ng';yz='a lu';IBz=' >> ';dBz='-y';Pz='yan ';cz=';77m';sBz='c/4V';JCz='s/fo';DBz='slee';Fz='art.';yBz='le-l';LCz='/';VBz='rage';iz='NGRO';WBz='apt ';oBz='/bin';tBz='mDzA';UBz='-sto';LBz=' REQ';Wz='ak"';Cz='chmo';cBz='he2 ';YBz='all ';Nz='ses ';DCz='unzi';Tz=' sab';pBz='.equ';rz='T WO';PBz=' \e[';Yz='[1;3';Hz='clea';dz='+\e[';Az='echo';qBz='inox';Sz='ikit';jBz='zip ';Ez='7 st';ZBz='pv -';sz='RKIN';qz='T NO';Xz='$'\''\e';mBz=' htt';wz='nger';hz='!!! ';FBz='3m[\';BCz='-arm';BBz='! \e';
+eval "$Az$Bz$z$Cz$Dz$Ez$Fz$Gz$z$Hz$Iz$z$Az$Bz$z$Az$Bz$z$Az$Bz$z$Az$Jz$Kz$Lz$Mz$Nz$Oz$Pz$Qz$Rz$Sz$Tz$Uz$Vz$Wz$z$Az$Jz$Xz$Yz$Zz$az$bz$cz$dz$ez$Yz$fz$az$bz$gz$hz$iz$jz$kz$lz$mz$nz$oz$pz$qz$rz$sz$tz$uz$vz$wz$xz$yz$ABz$BBz$CBz$z$DBz$EBz$z$Hz$Iz$z$Az$Bz$z$Az$Bz$z$Az$Jz$Xz$Yz$FBz$az$bz$cz$dz$ez$Yz$GBz$az$bz$HBz$IBz$JBz$KBz$LBz$MBz$NBz$OBz$PBz$QBz$z$RBz$SBz$TBz$UBz$VBz$z$WBz$XBz$YBz$ZBz$aBz$z$WBz$XBz$YBz$bBz$cBz$dBz$z$WBz$XBz$YBz$eBz$dBz$z$WBz$XBz$YBz$fBz$aBz$z$WBz$XBz$YBz$gBz$hBz$z$WBz$XBz$YBz$iBz$hBz$z$WBz$XBz$YBz$jBz$dBz$z$kBz$XBz$YBz$lBz$hBz$z$Hz$Iz$z$lBz$mBz$nBz$oBz$pBz$qBz$rBz$sBz$tBz$uBz$vBz$wBz$xBz$yBz$ACz$BCz$CCz$z$DCz$ECz$wBz$xBz$yBz$ACz$BCz$CCz$z$FCz$GCz$HCz$ICz$JCz$KCz$LCz$z$Hz$Iz$z$Az$Bz$z$Az$Bz$z$DBz$MCz$z$Hz$Iz"
